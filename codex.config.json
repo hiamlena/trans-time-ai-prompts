@@ -1,0 +1,12 @@
+{
+  "model": "gpt-5",
+  "temperature": 0.2,
+  "max_tokens": 4096,
+  "prompts": {
+    "system": "./prompts/core.yml",
+    "map": "./prompts/map.yml",
+    "chat": "./prompts/chat.yml",
+    "ui": "./prompts/ui.yml",
+    "dev": "./prompts/dev.yml"
+  }
+}

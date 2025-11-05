@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "version": "1.0",
+    "updated": "2025-11-05",
+    "module": "map"
+  },
+  "tests": [
+    {
+      "name": "Москва-Казань без рамок",
+      "input": "Построй маршрут из Москвы в Казань без рамок.",
+      "expects": {
+        "actions[0].type": "set_avoid",
+        "actions[1].type": "build_route",
+        "telemetry.intent": "build_no_frames"
+      }
+    },
+    {
+      "name": "Объяснение трассы",
+      "input": "Почему маршрут идёт через эту трассу?",
+      "expects": {
+        "actions[0].type": "explain_route",
+        "telemetry.intent": "explain_route"
+      }
+    },
+    {
+      "name": "Обновление ТС",
+      "input": "Обнови профиль: масса 18 т, высота 4.2 м.",
+      "expects": {
+        "actions[0].type": "set_vehicle",
+        "actions[1].type": "build_route",
+        "telemetry.intent": "recalc_vehicle"
+      }
+    }
+  ]
+}

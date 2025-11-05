@@ -1,0 +1,9 @@
+# env & editor
+.env
+.vscode/
+.idea/
+.DS_Store
+
+# node/python caches
+node_modules/
+__pycache__/

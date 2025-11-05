@@ -1,0 +1,14 @@
+version: 1.0
+last_update: 2025-11-05
+author: Trans-Time Team
+description: "Отладка/диагностика."
+
+debug:
+  verbose: true
+  echo_intent: true
+  safe_defaults:
+    avoid_tolls: false
+    avoid_frames: false
+    traffic: "auto"
+contracts:
+  enforce_json_for_map: true
